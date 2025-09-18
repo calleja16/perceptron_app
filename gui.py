@@ -8,7 +8,7 @@ from data_loader import DataLoader
 class PerceptronApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Perceptrón Simple - Implementación desde Cero")
+        self.root.title("Perceptrón Simple")
         self.root.geometry("1000x700")
         
         self.perceptron = None
@@ -135,7 +135,8 @@ class PerceptronApp:
             
         except ValueError:
             messagebox.showerror("Error", "Verifique los valores ingresados")
-    
+
+    #genera la grafica del error
     def start_training(self):
         if self.perceptron is None:
             messagebox.showerror("Error", "Primero inicialice el perceptrón")

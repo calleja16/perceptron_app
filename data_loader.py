@@ -80,7 +80,7 @@ class DataLoader:
         
         return False
 
-    
+    #Separa los datos en X e y
     def _process_data(self):
         if self.data is not None:
             # Asumimos que la última columna es la salida
